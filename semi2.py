@@ -26,7 +26,7 @@ class seminar2:
         # Create container
         subprocess.call(
             ['ffmpeg', '-i', '1min.mp4', '-i', 'bbbMP3.mp3', '-i', 'bbbMP3.aac',
-             '-map', '0:v', '-map', '0:a', '-map', '1:a', 'container.mp4'])
+             '-map', '0:v', '-map', '1:a', '-map', '2:a', 'container.mp4'])
 
     def ex3(self):
         # Read the tracks from an MP4 container
